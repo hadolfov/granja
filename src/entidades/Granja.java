@@ -5,7 +5,19 @@ import java.util.List;
 import java.util.Random;
 
 public class Granja {
+    public Granja() {
+        corral[0] = vacas;
+        corral[1] = perros;
+        corral[2] = gatos;
+        corral[3] = gallos;
+    }
+
     List<Animal>[] corral = new List[4];
+
+    List<Animal> vacas  = new ArrayList<>();
+    List<Animal> perros = new ArrayList<>();
+    List<Animal> gatos  = new ArrayList<>();
+    List<Animal> gallos = new ArrayList<>();
 
     Animal vaca  = new Vaca(0);
     Animal perro = new Perro(0);
@@ -28,16 +40,6 @@ public class Granja {
     }
 
     public void nuevoAnimal(){
-
-        List<Animal> vacas  = new ArrayList<>();
-        List<Animal> perros = new ArrayList<>();
-        List<Animal> gatos  = new ArrayList<>();
-        List<Animal> gallos = new ArrayList<>();
-
-        corral[0] = vacas;
-        corral[1] = perros;
-        corral[2] = gatos;
-        corral[3] = gallos;
 
         Random rand = new Random();
         int rand_int1 = rand.nextInt(4);

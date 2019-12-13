@@ -11,5 +11,5 @@ public class granja {
             G.hacerBulla();
             System.out.println("---------");
         } while (1 == 1);
-        }
+    }
 }
